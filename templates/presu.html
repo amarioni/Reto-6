@@ -1,0 +1,46 @@
+{% extends "template.html" %}
+    {% block contenido %}
+    <div class="conteinter main_section">
+        <div class="row">
+            <div class="container d-flex">
+              <div class="col-sm-3"></div>
+              <div class="col-sm-6">
+                  <form>
+                      <div class="mb-3">
+                          <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                          <input type="text" class="form-control" placeholder="Juan">
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Apellido</label>
+                          <input type="text" class="form-control" placeholder="Marconi">
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">E-mail</label>
+                          <input type="text" class="form-control" placeholder="juan@mail.com">
+                      </div>
+                      <div class="mb-3">
+                          <label for="exampleInputPassword1" class="form-label">Telefono</label>
+                          <input type="text" class="form-control" placeholder="(xxx)-xxxxxxx">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Elija su producto</label>
+                        <select class="form-select form-select-sm" aria-label=".form-control">
+                          <option value="1">Driwall</option>
+                          <option value="2">Amoblamiento</option>
+                        </select>
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleFormControlTextarea1" class="form-label">Descripcion</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                      </div>
+                  </form>
+                  <a href="{{ url_for('exito') }}"><button class="main_btn">Enviar</button></a>
+              </div>
+              <div class="col-sm-3"></div>
+            </div>
+        </div>
+    </div>
+  
+    <br>
+    <br>
+    {% endblock %}

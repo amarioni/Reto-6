@@ -1,0 +1,24 @@
+{% extends "template.html" %}
+    {% block contenido %}
+    <div class="conteinter main_section fadeIn">
+        <div class="row">
+              <div class="container d-flex">
+                  <div class="col-sm-12">
+                      <img class="img-fluid" width="300" height="300" src="static/images/error.png" alt="">
+                  </div>
+              </div> 
+              <div class="container d-flex"> 
+                  <h1 class="main_section fadeIn">
+                      Estamos trabajando para mejorar tu experiencia
+                  </h1>
+              </div>   
+              <div class="container d-flex"> 
+                  <div class="col-sm-5"></div> 
+                  <div class="col-sm-2">
+                      <a href="{{ url_for('home') }}"><button class="main_btn">Inicio</button></a>
+                  </div>
+                  <div class="col-sm-5"></div> 
+              </div>
+        </div>
+    </div>
+    {% endblock %}

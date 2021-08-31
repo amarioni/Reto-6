@@ -1,0 +1,28 @@
+{% extends "template.html" %}
+    {% block contenido %}
+    <div class="conteinter main_section fadeIn">
+        <div class="row">
+              <div class="container d-flex">
+                  <div class="col-sm-12">
+                      <img class="img-fluid" width="150" height="150" src="static/images/verif.png" alt="">
+                  </div>
+              </div>
+              <div class="container"> 
+                  <h1 class="main_section fadeIn pb-0">
+                      ¡Flicidades!
+                  </h1>
+                  <h3 class="main_section fadeIn pb-0">
+                      Tu presupuesto fue enviado correctamente
+                      Recibiras tu respuesta en un plazo maximo de 48hs.
+                  </h3>
+              </div>   
+              <div class="container d-flex"> 
+                  <div class="col-sm-5"></div> 
+                  <div class="col-sm-2">
+                      <a href="{{ url_for('home') }}"><button class="main_btn">Inicio</button></a>
+                  </div>
+                  <div class="col-sm-5"></div> 
+              </div>
+        </div>
+    </div>
+    {% endblock %}

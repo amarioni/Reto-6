@@ -1,0 +1,71 @@
+{% extends "template.html" %}
+    {% block contenido %}
+    <h1 class="main_section fadeIn">
+        Las mejores soluciones rapidas para tus problemas de construcción
+      </h1>
+  
+      <!-- Inicio productos -->
+      <div class="products">
+        <div class="product fadeInUp">
+          <div class="content">
+            <div class="image-product mb-4">
+              <img class="rounded border border-danger border-5 img-fluid" with="350" height="350" src="static/images/dri.png" alt="">
+            </div>
+            <a href="{{ url_for('driwall') }}"><button class="main_btn">Ver Galeria</button></a>
+          </div>
+        </div>
+        <div class="product fadeInUp">
+          <div class="content">
+            <div class="image-product mb-4">
+              <img class="rounded border border-danger border-5 img-fluid" with="350" height="350" src="static/images/mela.png" alt="">
+            </div>
+            <a href="{{ url_for('amoblamiento') }}"><button class="main_btn">Ver Galeria</button></a>
+          </div>
+        </div>
+      </div>
+      <!-- Fin productos -->
+  
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+  
+      <!-- Inicia menciones -->
+      <h2 class="mention_title">Marcas Trabajadas</h2>
+      <div class="mentions">
+        <div class="mention">
+          <div class="content_mention">
+            <img class=with="350" height="150" src="static/images/durlock.png" alt="">
+            <div class="text">
+              <h3>Durlock</h3>
+            </div>
+          </div>
+        </div>
+        <div class="mention">
+          <div class="content_mention">
+            <img width="350" height="150" src="static/images/barbieri.png" alt="">
+            <div class="text">
+              <h3>Barbieri</h3>
+            </div>
+          </div>
+        </div>
+        <div class="mention">
+          <div class="content_mention">
+            <img width="350" height="150" src="static/images/egger.png" alt="">
+            <div class="text">
+              <h3>Egger</h3>
+            </div>
+          </div>
+        </div>
+        <div class="mention">
+          <div class="content_mention">
+            <img width="350" height="150" src="static/images/geuro.png" alt="">
+            <div class="text">
+              <h3>Grupo Euro</h3>
+            </div>
+          </div>
+        </div>
+    </div>
+    <!-- Fin de menciones -->
+    {% endblock %}
